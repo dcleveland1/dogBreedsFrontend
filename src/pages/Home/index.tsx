@@ -47,17 +47,17 @@ export const Home = () => {
   return (
     <StyledContainer fluid> 
       <StyledRowSelect>
-        <Col xs={{ span: 6, offset: 2 }}>
+        <Col xl={{ span: 6, offset: 2 }} xs={{ span: 10, offset: 1 }}>
           <StyledCard onClick={() => setSearchCheck('search')} style={{padding:0, backgroundColor: searchCheck === 'search' ? "#6062ad" : "#ffff"}}>
             <SelectComponent images={imagenes}/>
           </StyledCard>
         </Col>
-        <Col xs={{ span: 1, offset: 0 }}>
+        <Col xl={{ span: 1, offset: 0 }}  xs={{ span: 4, offset: 2 }}>
           <StyledCard  onClick={() => setSearchCheck('random')} style={{backgroundColor: searchCheck === 'random' ? "#6d1766" : "#ffff"}}>            
             <QuestionOctagon size={60} />
           </StyledCard>
         </Col>
-        <Col xs={{ span: 1, offset: 0 }}>
+        <Col xl={{ span: 1, offset: 0 }} xs={{ span: 4, offset: 0 }}>
           <StyledCard onClick={() => setSearchCheck('favorite')} style={{backgroundColor: searchCheck === 'favorite' ? "#d18989" : "#ffff"}}>            
             <EmojiHeartEyes  size={60} />
           </StyledCard>
